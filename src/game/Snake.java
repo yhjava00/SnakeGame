@@ -28,8 +28,7 @@ public class Snake {
 				
 				try {
 					Thread.sleep(1);
-				} catch (Exception e) {
-				}
+				} catch (Exception e) {}
 				
 				if(Map.end) {
 					pw.println(Map.len);

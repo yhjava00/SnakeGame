@@ -23,4 +23,10 @@ public class Board extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
+	@Override
+	public void setDefaultCloseOperation(int operation) {
+		Map.out = true;
+		super.setDefaultCloseOperation(operation);
+		
+	}
 }

@@ -31,7 +31,7 @@ public class SocketServer {
 			String readData = "";
 			
 			while (!(readData = br.readLine()).equals(null)) {
-				System.out.println("from Cliend > " + readData);
+				System.out.println("from Client > " + readData);
 				
 				String sendData = "";
 				int score = Integer.parseInt(readData);
