@@ -14,7 +14,6 @@ public class Snake {
 	public static void main(String[] args) {
 		new Board();
 		init();
-		System.out.println("hello world");
 	}
 
 	public static void init() {
