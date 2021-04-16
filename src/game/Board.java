@@ -2,6 +2,8 @@ package game;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
@@ -20,13 +22,13 @@ public class Board extends JFrame {
 	    
         setTitle("Snake");
         setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+        	@Override
+        	public void windowClosing(WindowEvent e) {
+        		Map.out = true;
+        		System.exit(1);
+        	}
+		});
 	}
 	
-	@Override
-	public void setDefaultCloseOperation(int operation) {
-		Map.out = true;
-		super.setDefaultCloseOperation(operation);
-		
-	}
 }

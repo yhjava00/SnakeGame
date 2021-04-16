@@ -54,7 +54,7 @@ public class SocketServer {
 				pw.flush();
 			}
 			clientSocket.close();
-		} catch (IOException e) {
+		} catch (Exception e) {
 		}
 		
 	}
